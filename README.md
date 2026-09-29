@@ -1,5 +1,7 @@
 # Agentic System with Guardrails & Observability
 
+[![Diagram](https://img.shields.io/badge/gitdiagram-view%20architecture-blue)](https://gitdiagram.com/mehta-amit-codes/agentic-guardrails)
+
 Reference implementation of the "Agentic System with Guardrails &
 Observability" blueprint: a tool-using ReAct agent wrapped with structured
 tracing, input/output guardrails (PII redaction, prompt-injection
