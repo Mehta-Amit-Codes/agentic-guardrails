@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  agent-api:
+    build: .
+    environment:
+      GROK_API_KEY: ${GROK_API_KEY}
+      AGENT_MODEL: grok-4
+      AGENT_MAX_STEPS: 10
+      AGENT_MAX_TOKENS: 20000
+      AGENT_MAX_COST_USD: 0.50
+    ports:
+      - "8003:8003"
+    volumes:
+      - agent_data:/app/data
+
+volumes:
+  agent_data:
